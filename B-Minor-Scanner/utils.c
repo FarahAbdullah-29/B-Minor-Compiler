@@ -1,0 +1,105 @@
+#include "tokens.h"
+#include "utils.h"
+
+char* get_token_name(int token) {
+  switch(token){
+    case TOKEN_ARRAY:
+        return "TOKEN_ARRAY";
+    case TOKEN_BOOLEAN:
+        return "TOKEN_BOOLEAN";
+    case TOKEN_CHAR:
+        return "TOKEN_CHAR";
+    case TOKEN_ELSE:
+        return "TOKEN_ELSE";
+    case TOKEN_FALSE:
+        return "TOKEN_FALSE";
+    case TOKEN_FOR:
+        return "TOKEN_FOR";
+    case TOKEN_FUNCTION:
+        return "TOKEN_FUNCTION";
+    case TOKEN_IF:
+        return "TOKEN_IF";
+    case TOKEN_INTEGER:
+        return "TOKEN_INTEGER";
+    case TOKEN_PRINT:
+        return "TOKEN_PRINT";
+    case TOKEN_RETURN:
+        return "TOKEN_RETURN";
+    case TOKEN_STRING:
+        return "TOKEN_STRING";
+    case TOKEN_TRUE:
+        return "TOKEN_TRUE";
+    case TOKEN_VOID:
+        return "TOKEN_VOID";
+    case TOKEN_WHILE:
+        return "TOKEN_WHILE";
+    case TOKEN_LITERAL_INT:
+        return "TOKEN_LITERAL_INT";
+    case TOKEN_LITERAL_CHAR:
+        return "TOKEN_LITERAL_CHAR";
+    case TOKEN_LITERAL_STRING:
+        return "TOKEN_LITERAL_STRING";
+    case TOKEN_IDENT:
+        return "TOKEN_IDENT";
+    case TOKEN_POSTFIX_ADD:
+        return "TOKEN_POSTFIX_ADD";
+    case TOKEN_POSTFIX_MINUS:
+        return "TOKEN_POSTFIX_MINUS";
+    case TOKEN_GREATER_EQUAL:
+        return "TOKEN_GREATER_EQUAL";
+    case TOKEN_LESS_EQUAL:
+        return "TOKEN_LESS_EQUAL";
+    case TOKEN_EQUAL:
+        return "TOKEN_EQUAL";
+    case TOKEN_NOT_EQUAL:
+        return "TOKEN_NOT_EQUAL";
+    case TOKEN_LOGICAL_AND:
+        return "TOKEN_LOGICAL_AND";
+    case TOKEN_LOGICAL_OR:
+        return "TOKEN_LOGICAL_OR";
+    case TOKEN_NOT:
+        return "TOKEN_NOT";
+    case TOKEN_LPAREN:
+        return "TOKEN_LPAREN";
+    case TOKEN_RPAREN:
+        return "TOKEN_RPAREN";
+    case TOKEN_LBRACKET:
+        return "TOKEN_LBRACKET";
+    case TOKEN_RBRACKET:
+        return "TOKEN_RBRACKET";
+    case TOKEN_LBRACE:
+        return "TOKEN_LBRACE";
+    case TOKEN_RBRACE:
+        return "TOKEN_RBRACE";
+    case TOKEN_EXPONENTIAL:
+        return "TOKEN_EXPONENTIAL";
+    case TOKEN_MUL:
+        return "TOKEN_MUL";
+    case TOKEN_DIV:
+        return "TOKEN_DIV";
+    case TOKEN_MOD:
+        return "TOKEN_MOD";
+    case TOKEN_PLUS:
+        return "TOKEN_PLUS";
+    case TOKEN_MINUS:
+        return "TOKEN_MINUS";
+    case TOKEN_COMMA:
+        return "TOKEN_COMMA";
+    case TOKEN_GREATER:
+        return "TOKEN_GREATER";
+    case TOKEN_LESS:
+        return "TOKEN_LESS";
+    case TOKEN_ASSIGN:
+        return "TOKEN_ASSIGN";
+    case TOKEN_COLON:
+        return "TOKEN_COLON";
+    case TOKEN_SEMI:
+        return "TOKEN_SEMI";
+    case TOKEN_ERROR:
+        return "TOKEN_ERROR";
+    case TOKEN_NO_ELSE:
+        return "TOKEN_NO_ELSE";
+    default:
+        return "UNKNOWN TOKEN";
+  }
+}
